@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/vlrrywof/public_html/pedidos-si-va/
+    - /bin/cp -R * $DEPLOYPATH
+    - cp .htaccess $DEPLOYPATH
+    # - cp .env $DEPLOYPATH
+    - cp .styleci.yml $DEPLOYPATH
